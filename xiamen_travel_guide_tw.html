@@ -1,0 +1,995 @@
+<html lang="zh-TW"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>廈門7天自由行完整攻略 | 臺北→廈門金馬小三通深度遊</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',
+                        secondary: '#059669',
+                        accent: '#F59E0B',
+                        warm: '#FEF3C7',
+                        ocean: '#0EA5E9'
+                    },
+                    fontFamily: {
+                        chinese: ['PingFang TC', 'Microsoft YaHei', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .glass-effect {
+                backdrop-filter: blur(10px);
+                background: rgba(255, 255, 255, 0.9);
+            }
+            .gradient-text {
+                background: linear-gradient(135deg, #1E40AF, #059669);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .hero-gradient {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+            .fade-in {
+                animation: fadeIn 0.8s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(30px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .slide-in-left {
+                animation: slideInLeft 0.6s ease-out;
+            }
+            @keyframes slideInLeft {
+                from { opacity: 0; transform: translateX(-50px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+            .slide-in-right {
+                animation: slideInRight 0.6s ease-out;
+            }
+            @keyframes slideInRight {
+                from { opacity: 0; transform: translateX(50px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+            .parallax {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body class="font-chinese bg-gray-50">
+    <!-- 導航欄 -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <i class="fa fa-map-marker text-2xl text-primary"></i>
+                    <h1 class="text-xl font-bold gradient-text">廈門7天深度遊</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#itinerary" class="text-gray-700 hover:text-primary transition-colors">行程安排</a>
+                    <a href="#budget" class="text-gray-700 hover:text-primary transition-colors">費用預算</a>
+                    <a href="#attractions" class="text-gray-700 hover:text-primary transition-colors">精彩景點</a>
+                    <a href="#tips" class="text-gray-700 hover:text-primary transition-colors">實用攻略</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區域 -->
+    <section class="relative h-screen flex items-center justify-center hero-gradient">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-[clamp(2.5rem,6vw,4rem)] font-bold mb-6 fade-in">
+                廈門7天自由行
+                <span class="block text-[clamp(1.5rem,4vw,2.5rem)] text-blue-200 mt-2">臺北→廈門金馬小三通深度遊</span>
+            </h1>
+            <p class="text-[clamp(1rem,2.5vw,1.25rem)] mb-8 max-w-3xl mx-auto leading-relaxed fade-in">
+                探索海上花園城市，感受閩南文化魅力，品味地道美食，體驗手佳按摩，開啟一段難忘的廈門之旅
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+                <a href="#itinerary" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                    <i class="fa fa-calendar mr-2"></i>查看行程
+                </a>
+                <a href="#attractions" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-all">
+                    <i class="fa fa-camera mr-2"></i>精彩景點
+                </a>
+                <a href="https://zt.coinmill.com/CNY_TWD.html" target="_blank" class="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition-all transform hover:scale-105">
+                    <i class="fa fa-exchange mr-2"></i>匯率查詢
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fa fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- 行程概覽 -->
+    <section id="overview" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(2rem,4vw,3rem)] font-bold gradient-text mb-4">行程概覽</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    7天6夜完整覆蓋廈門經典景點，特別安排手佳按摩體驗，讓您深度感受廈門的自然美景、歷史文化和美食魅力
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-clock-o text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">7天6夜</h3>
+                    <p class="text-gray-600">充足時間深度遊覽廈門各大地標景點</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-map text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">15+景點</h3>
+                    <p class="text-gray-600">涵蓋鼓浪嶼、廈門大學、環島路等必遊景點</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">特色體驗</h3>
+                    <p class="text-gray-600">手佳按摩、地道美食、帆船出海等獨特體驗</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 詳細行程 -->
+    <section id="itinerary" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(2rem,4vw,3rem)] font-bold gradient-text mb-4">詳細行程安排</h2>
+                <p class="text-gray-600 text-lg">精心規劃每日行程，確保您不錯過任何精彩</p>
+            </div>
+
+            <!-- Day 1 -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8 slide-in-left">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">1</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Day 1 (2/8) 臺北→金門→廈門</h3>
+                        <p class="text-gray-600">開啟廈門之旅</p>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="slide-in-left">
+                        <img src="https://doc.doubao.com/s/qAUeaNDhGmE/" alt="臺北101夜景" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <div class="slide-in-right">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-sun-o text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">上午：臺北出發</h4>
+                                    <p class="text-gray-600">08:00 臺北松山機場出發 → 09:00 抵達金門尚義機場 → 09:30 前往金門水頭碼頭</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-ship text-ocean mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">下午：抵達廈門</h4>
+                                    <p class="text-gray-600">10:30 辦理小三通手續乘船 → 11:00 抵達廈門五通碼頭 → 12:00 前往酒店入住</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-moon-o text-primary mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">晚上：中山路初探</h4>
+                                    <p class="text-gray-600">18:00 中山路步行街晚餐 → 19:30 漫步中山路，欣賞騎樓建築夜景</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8 slide-in-left">
+                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">2</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Day 2 (2/9) 廈門經典景點一日遊</h3>
+                        <p class="text-gray-600">感受廈門文化底蘊</p>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="slide-in-left">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-university text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">上午：南普陀寺 + 廈門大學</h4>
+                                    <p class="text-gray-600">08:30 南普陀寺（免費，需預約）→ 09:30 品嚐南普陀素齋 → 11:00 廈門大學參觀</p>
+                                    <p class="text-sm text-blue-600 mt-1">💡 廈門大學需提前1-3天在"廈門大學訪客預約系統"微信公眾號預約</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-bullseye text-secondary mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">下午：植物園 + 白城沙灘</h4>
+                                    <p class="text-gray-600">14:00 廈門園林植物園 → 16:30 白城沙灘漫步，遠眺鼓浪嶼</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-camera text-primary mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">晚上：沙坡尾藝術西區</h4>
+                                    <p class="text-gray-600">18:30 沙坡尾藝術西區 → 20:00 沙坡尾避風塢看夜景</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-in-right">
+                        <img src="https://doc.doubao.com/s/67TjK_rUvn8/" alt="廈門大學芙蓉湖" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8 slide-in-left">
+                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">3</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Day 3 (2/10) 鼓浪嶼深度遊</h3>
+                        <p class="text-gray-600">世界文化遺產探索</p>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="slide-in-left">
+                        <img src="https://doc.doubao.com/s/qKlajfZGOuU/" alt="廈門鼓浪嶼全景" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <div class="slide-in-right">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-sun-o text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">上午：鼓浪嶼經典景點</h4>
+                                    <p class="text-gray-600">07:30 前往郵輪中心 → 08:30 乘船前往鼓浪嶼 → 09:00 最美轉角 → 09:30 八卦樓 → 10:30 日光岩登頂</p>
+                                    <p class="text-sm text-blue-600 mt-1">💎 為什麼值得去：鼓浪嶼是世界文化遺產，萬國建築博覽會，音樂之島</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-music text-primary mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">下午：文藝之旅</h4>
+                                    <p class="text-gray-600">12:00 龍頭路美食 → 14:00 菽莊花園+鋼琴博物館 → 15:30 皓月園 → 16:30 大德記浴場</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-heart text-red-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">晚上：浪漫日落</h4>
+                                    <p class="text-gray-600">17:30 港仔後沙灘看日落 → 19:00 返回廈門 → 20:00 八市夜宵</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8 slide-in-left">
+                    <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">4</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Day 4 (2/11) 手佳按摩體驗日</h3>
+                        <p class="text-gray-600">放鬆身心，享受生活</p>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="slide-in-left">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-hand-o-up text-red-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">重點安排：手佳按摩+自助餐</h4>
+                                    <p class="text-gray-600">11:00 手佳健康會所(呂厝豪峰店) → 經典按摩套餐(約400元/人) → 享受24小時自助餐廳美食</p>
+                                    <p class="text-sm text-blue-600 mt-1">📍 地址：廈門市湖里區呂嶺路15號豪峰大廈2-3樓 | ☎ 電話：0592-5169988</p>
+                                    <p class="text-sm text-green-600 mt-1">💝 為什麼值得體驗：專業按摩服務，緩解旅途疲勞，24小時營業，性價比極高</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-coffee text-brown-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">下午：休閒時光</h4>
+                                    <p class="text-gray-600">15:00 休息調整 → 16:30 曾厝垵文創街區 → 17:30 環島路騎行</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-cutlery text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">晚上：曾厝垵美食</h4>
+                                    <p class="text-gray-600">19:00 曾厝垵晚餐，品嚐當地特色美食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-in-right">
+                        <img src="https://doc.doubao.com/s/DtQ9tyuufoo/" alt="廈門環島路海灘" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8 slide-in-left">
+                    <div class="w-12 h-12 bg-ocean rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">5</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Day 5 (2/12) 環島路風光+集美學村</h3>
+                        <p class="text-gray-600">海岸線美景與嘉庚文化</p>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="slide-in-left">
+                        <img src="https://doc.doubao.com/s/ipM4qMhXXsQ/" alt="廈門黃厝海灘日出" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <div class="slide-in-right">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-sun-o text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">上午：環島路日出之旅</h4>
+                                    <p class="text-gray-600">08:30 黃厝海灘看日出 → 10:00 環島路騎行 → 11:30 椰風寨海濱風光</p>
+                                    <p class="text-sm text-blue-600 mt-1">🌅 黃厝海灘是廈門最佳觀日出地點</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-graduation-cap text-secondary mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">下午：集美學村</h4>
+                                    <p class="text-gray-600">13:00 集美學村（地鐵1號線海上段）→ 14:30 龍舟池、嘉庚建築群 → 16:00 鰲園參觀</p>
+                                    <p class="text-sm text-green-600 mt-1">🏛️ 為什麼值得去：嘉庚建築風格獨特，深厚的教育文化底蘊</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-shopping-bag text-primary mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">晚上：中山路購物</h4>
+                                    <p class="text-gray-600">18:00 返回廈門本島 → 19:30 中山路晚餐，購買伴手禮</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8 slide-in-left">
+                    <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">6</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Day 6 (2/13) 休閒購物+美食體驗</h3>
+                        <p class="text-gray-600">慢節奏享受廈門生活</p>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="slide-in-left">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-bullseye text-secondary mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">上午：五緣灣濕地公園</h4>
+                                    <p class="text-gray-600">09:30 五緣灣濕地公園（廈門城市綠肺）→ 11:00 帆船出海體驗（可選，約200元/人）</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-shopping-cart text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">下午：購物+美食</h4>
+                                    <p class="text-gray-600">13:00 SM城市廣場或萬象城購物 → 15:00 八市深度美食體驗</p>
+                                    <p class="text-sm text-green-600 mt-1">🍜 八市推薦：阿傑五香、鐘麗君滿煎糕、明月蝦面、尚青海鮮</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-star text-yellow-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">晚上：特色晚餐</h4>
+                                    <p class="text-gray-600">18:00 薑母鴨特色晚餐（鑫塢堂推薦）→ 20:00 最後一次漫步中山路</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-in-right">
+                        <img src="https://doc.doubao.com/s/o1inqmFn7wM/" alt="廈門五緣灣濕地公園" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 7 -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8 slide-in-left">
+                    <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">7</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Day 7 (2/14) 返程</h3>
+                        <p class="text-gray-600">美好的廈門之旅結束</p>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="slide-in-left">
+                        <img src="https://doc.doubao.com/s/wVHAdRIast0/" alt="廈門雙子塔夜景" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <div class="slide-in-right">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-suitcase text-primary mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">上午：最後時光</h4>
+                                    <p class="text-gray-600">09:00 酒店退房，行李寄存 → 10:00 最後購物，補充伴手禮 → 11:30 前往廈門五通碼頭</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-ship text-ocean mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">下午：返程</h4>
+                                    <p class="text-gray-600">13:00 乘船返回金門水頭碼頭 → 14:00 金門尚義機場 → 15:30 飛往臺北松山機場 → 16:30 抵達臺北</p>
+                                </div>
+                            </div>
+                            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                                <div class="flex">
+                                    <i class="fa fa-lightbulb-o text-yellow-600 mr-2"></i>
+                                    <p class="text-yellow-700">
+                                        <strong>溫馨提醒：</strong>2026年2月將進行第二次航道改線，建議出發前通過官方渠道確認最新船班時刻
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 費用預算 -->
+    <section id="budget" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(2rem,4vw,3rem)] font-bold gradient-text mb-4">費用預算估算</h2>
+                <p class="text-gray-600 text-lg">透明詳細的費用清單，讓您的旅行更有計劃</p>
+                <div class="mt-4">
+                    <a href="https://zt.coinmill.com/CNY_TWD.html" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                        <i class="fa fa-exchange mr-2"></i>
+                        即時匯率查詢：1人民幣 ≈ 4.5新臺幣（請以實際匯率為準）
+                    </a>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr class="border-b-2 border-blue-200">
+                                    <th class="pb-4 text-lg font-semibold text-gray-800">項目</th>
+                                    <th class="pb-4 text-lg font-semibold text-gray-800">費用（人民幣）</th>
+                                    <th class="pb-4 text-lg font-semibold text-gray-800">費用（新臺幣）</th>
+                                    <th class="pb-4 text-lg font-semibold text-gray-800">說明</th>
+                                </tr>
+                            </thead>
+                            <tbody class="space-y-2">
+                                <tr class="border-b border-blue-100 hover:bg-white/50 transition-colors">
+                                    <td class="py-4 font-medium">小三通往返</td>
+                                    <td class="py-4 text-primary font-bold">約600元</td>
+                                    <td class="py-4 text-green-600 font-bold">約2,700元</td>
+                                    <td class="py-4 text-gray-600">臺北↔金門機票+金門↔廈門船票</td>
+                                </tr>
+                                <tr class="border-b border-blue-100 hover:bg-white/50 transition-colors">
+                                    <td class="py-4 font-medium">住宿（6晚）</td>
+                                    <td class="py-4 text-primary font-bold">1200-2400元</td>
+                                    <td class="py-4 text-green-600 font-bold">5,400-10,800元</td>
+                                    <td class="py-4 text-gray-600">中山路/輪渡區酒店，200-400元/晚</td>
+                                </tr>
+                                <tr class="border-b border-blue-100 hover:bg-white/50 transition-colors">
+                                    <td class="py-4 font-medium">手佳按摩+自助餐</td>
+                                    <td class="py-4 text-primary font-bold">400元</td>
+                                    <td class="py-4 text-green-600 font-bold">1,800元</td>
+                                    <td class="py-4 text-gray-600">經典按摩套餐+24小時自助餐</td>
+                                </tr>
+                                <tr class="border-b border-blue-100 hover:bg-white/50 transition-colors">
+                                    <td class="py-4 font-medium">餐飲</td>
+                                    <td class="py-4 text-primary font-bold">1050-1400元</td>
+                                    <td class="py-4 text-green-600 font-bold">4,725-6,300元</td>
+                                    <td class="py-4 text-gray-600">每人每天150-200元標準</td>
+                                </tr>
+                                <tr class="border-b border-blue-100 hover:bg-white/50 transition-colors">
+                                    <td class="py-4 font-medium">交通（市內）</td>
+                                    <td class="py-4 text-primary font-bold">300元</td>
+                                    <td class="py-4 text-green-600 font-bold">1,350元</td>
+                                    <td class="py-4 text-gray-600">地鐵、公交、打車等</td>
+                                </tr>
+                                <tr class="border-b border-blue-100 hover:bg-white/50 transition-colors">
+                                    <td class="py-4 font-medium">景點門票</td>
+                                    <td class="py-4 text-primary font-bold">200元</td>
+                                    <td class="py-4 text-green-600 font-bold">900元</td>
+                                    <td class="py-4 text-gray-600">主要景點門票費用</td>
+                                </tr>
+                                <tr class="bg-white rounded-lg p-4 mt-4">
+                                    <td class="py-4 font-bold text-xl">總計</td>
+                                    <td class="py-4 text-2xl font-bold text-secondary">3750-4900元</td>
+                                    <td class="py-4 text-2xl font-bold text-green-600">16,875-22,050元</td>
+                                    <td class="py-4 text-gray-600">人均費用，可根據個人需求調整</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精彩景點 -->
+    <section id="attractions" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(2rem,4vw,3rem)] font-bold gradient-text mb-4">精彩景點推薦</h2>
+                <p class="text-gray-600 text-lg">每個景點都有獨特的魅力，值得您深度探索</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 鼓浪嶼 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://doc.doubao.com/s/qgSLV6kQuzs/" alt="鼓浪嶼航拍" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">鼓浪嶼</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500"></i>
+                            <span class="text-gray-600 ml-2">世界文化遺產</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            萬國建築博覽會，音樂之島，東西方文化交融的典範。擁有日光岩、菽莊花園、鋼琴博物館等著名景點。
+                        </p>
+                        <div class="flex items-center text-sm text-blue-600">
+                            <i class="fa fa-map-marker mr-1"></i>
+                            <span>需乘船前往，建議遊玩1天</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 廈門大學 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://doc.doubao.com/s/5GlvmKQIEfk/" alt="廈門大學芙蓉湖" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">廈門大學</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-gray-300"></i>
+                            <span class="text-gray-600 ml-2">中國最美大學</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            中國最美大學之一，依山傍海，環境優美。芙蓉湖、芙蓉隧道、建南大會堂等都是必打卡地點。
+                        </p>
+                        <div class="flex items-center text-sm text-blue-600">
+                            <i class="fa fa-clock-o mr-1"></i>
+                            <span>需提前預約，建議遊玩2-3小時</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 廈門園林植物園 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://doc.doubao.com/s/GhMKkvDQ3u0/" alt="廈門植物園多肉植物區" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">廈門園林植物園</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500"></i>
+                            <span class="text-gray-600 ml-2">網紅打卡聖地</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            網紅打卡聖地，多肉植物區ins風大片誕生地，熱帶雨林區噴霧時間仙氣飄飄，植物種類豐富。
+                        </p>
+                        <div class="flex items-center text-sm text-blue-600">
+                            <i class="fa fa-camera mr-1"></i>
+                            <span>門票30元，建議遊玩3-4小時</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 環島路 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://doc.doubao.com/s/EQMabCN3x6A/" alt="廈門環島路航拍" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">環島路</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-gray-300"></i>
+                            <span class="text-gray-600 ml-2">黃金海岸線</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            黃金海岸線，最美馬拉松賽道。可以騎行看海，沿途有"一國兩制"標語牌、黃厝海灘等景點。
+                        </p>
+                        <div class="flex items-center text-sm text-blue-600">
+                            <i class="fa fa-bicycle mr-1"></i>
+                            <span>免費，建議騎行遊玩半天</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 沙坡尾藝術西區 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://doc.doubao.com/s/iGgDxsd6sk4/" alt="沙坡尾藝術西區" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">沙坡尾藝術西區</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-gray-300 mr-1"></i>
+                            <i class="fa fa-star text-gray-300"></i>
+                            <span class="text-gray-600 ml-2">文創藝術區</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            老漁港轉型的文創園區，充滿文藝氣息和創意塗鴉，彙集了原創設計師和手作達人。
+                        </p>
+                        <div class="flex items-center text-sm text-blue-600">
+                            <i class="fa fa-paint-brush mr-1"></i>
+                            <span>免費，建議遊玩2-3小時</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中山路步行街 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <img src="https://doc.doubao.com/s/EeDKiBcYF1Y/" alt="中山路騎樓建築" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">中山路步行街</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-yellow-500 mr-1"></i>
+                            <i class="fa fa-star text-gray-300"></i>
+                            <span class="text-gray-600 ml-2">百年商業街</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            百年歷史的商業街，南洋騎樓建築風格獨特，是品嚐閩南美食和購物的理想場所。
+                        </p>
+                        <div class="flex items-center text-sm text-blue-600">
+                            <i class="fa fa-shopping-bag mr-1"></i>
+                            <span>免費，建議晚上遊覽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食推薦 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(2rem,4vw,3rem)] font-bold gradient-text mb-4">必吃美食清單</h2>
+                <p class="text-gray-600 text-lg">品味地道閩南風味，感受廈門美食文化</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-hover bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 text-center">
+                    <img src="https://doc.doubao.com/s/p3AQWrzTqzU/" alt="沙茶面" class="w-full h-32 object-cover rounded-xl mb-4">
+                    <h3 class="font-bold text-gray-800 mb-2">沙茶面</h3>
+                    <p class="text-gray-600 text-sm">廈門招牌小吃，濃郁醬香，滿足味蕾</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 text-center">
+                    <img src="https://doc.doubao.com/s/Q9qzJmzVf74/" alt="土筍凍" class="w-full h-32 object-cover rounded-xl mb-4">
+                    <h3 class="font-bold text-gray-800 mb-2">土筍凍</h3>
+                    <p class="text-gray-600 text-sm">閩南特色，Q彈鮮美，海味十足</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-6 text-center">
+                    <div class="w-full h-32 bg-yellow-200 rounded-xl mb-4 flex items-center justify-center">
+                        <i class="fa fa-cutlery text-4xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">花生湯</h3>
+                    <p class="text-gray-600 text-sm">黃則和老店推薦，甜而不膩</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 text-center">
+                    <div class="w-full h-32 bg-red-200 rounded-xl mb-4 flex items-center justify-center">
+                        <i class="fa fa-fire text-4xl text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">薑母鴨</h3>
+                    <p class="text-gray-600 text-sm">鑫塢堂必吃，溫補養生</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 實用攻略 -->
+    <section id="tips" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(2rem,4vw,3rem)] font-bold gradient-text mb-4">實用攻略</h2>
+                <p class="text-gray-600 text-lg">詳細的交通、住宿、預約資訊，讓您的旅行更加順利</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- 交通攻略 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-plane text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">交通攻略</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-ship text-ocean mr-2"></i>金馬小三通
+                            </h4>
+                            <p class="text-gray-600 text-sm">臺北松山→金門尚義→廈門五通，總費用約600元人民幣</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-subway text-secondary mr-2"></i>市內交通
+                            </h4>
+                            <p class="text-gray-600 text-sm">地鐵支付寶"廈門地鐵電子卡"，公交1元起，網約車比計程車便宜</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-exclamation-triangle text-accent mr-2"></i>重要提醒
+                            </h4>
+                            <p class="text-gray-600 text-sm">2026年2月航道改線，出發前確認最新船班時刻</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 住宿推薦 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bed text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">住宿推薦</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-map-marker text-primary mr-2"></i>中山路/輪渡區
+                            </h4>
+                            <p class="text-gray-600 text-sm">交通最便利，近碼頭和主要景點，推薦廈門賓館、如家素柏雲酒店</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-heart text-red-500 mr-2"></i>曾厝垵區域
+                            </h4>
+                            <p class="text-gray-600 text-sm">文藝民宿集中，近環島路，適合年輕人和文藝青年</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-money text-green-600 mr-2"></i>價格區間
+                            </h4>
+                            <p class="text-gray-600 text-sm">經濟型100-200元，舒適型200-400元，高檔型400-800元</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 預約提醒 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bell text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">預約提醒</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-graduation-cap text-purple-600 mr-2"></i>廈門大學
+                            </h4>
+                            <p class="text-gray-600 text-sm">提前1-3天在"廈門大學訪客預約系統"微信公眾號預約</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-ship text-blue-600 mr-2"></i>鼓浪嶼船票
+                            </h4>
+                            <p class="text-gray-600 text-sm">提前3天在"廈門輪渡"公眾號購買，35元往返</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fa fa-hand-o-up text-red-500 mr-2"></i>手佳按摩
+                            </h4>
+                            <p class="text-gray-600 text-sm">建議提前電話預約：0592-5169988，避免排隊</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 天氣提醒 -->
+            <div class="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <div class="flex items-center justify-center mb-6">
+                    <i class="fa fa-cloud text-3xl text-blue-600 mr-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800">2月份廈門天氣提醒</h3>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-blue-600">16-19°C</div>
+                        <div class="text-gray-600">平均溫度</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-green-600">6天</div>
+                        <div class="text-gray-600">降雨天數</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-purple-600">較高</div>
+                        <div class="text-gray-600">濕度</div>
+                    </div>
+                </div>
+                <div class="mt-6 text-center">
+                    <p class="text-gray-700 font-medium">
+                        <i class="fa fa-lightbulb-o text-yellow-500 mr-2"></i>
+                        建議攜帶雨具，穿著保暖衣物，準備防曬用品
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="bg-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-6">
+                    <i class="fa fa-map-marker text-3xl text-primary"></i>
+                    <h3 class="text-2xl font-bold">廈門7天深度遊</h3>
+                </div>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                    這份完整的廈門自由行攻略包含了詳細的行程安排、費用預算、景點介紹和實用攻略，
+                    希望能幫助您度過一個難忘的廈門之旅。祝您旅途愉快！
+                </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <div class="text-center">
+                        <i class="fa fa-clock-o text-2xl text-primary mb-2"></i>
+                        <div class="text-sm">7天6夜</div>
+                    </div>
+                    <div class="text-center">
+                        <i class="fa fa-map text-2xl text-secondary mb-2"></i>
+                        <div class="text-sm">15+景點</div>
+                    </div>
+                    <div class="text-center">
+                        <i class="fa fa-camera text-2xl text-accent mb-2"></i>
+                        <div class="text-sm">高清圖片</div>
+                    </div>
+                    <div class="text-center">
+                        <i class="fa fa-heart text-2xl text-red-500 mb-2"></i>
+                        <div class="text-sm">貼心提醒</div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 廈門旅遊攻略. 祝您旅途愉快！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到頂部按鈕 -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:scale-110 opacity-0 pointer-events-none">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // 平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 回到頂部按鈕
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
+                backToTopButton.classList.add('opacity-100');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'pointer-events-none');
+                backToTopButton.classList.remove('opacity-100');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 滾動動畫
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // 觀察所有需要動畫的元素
+        document.querySelectorAll('.card-hover, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // 導航欄背景變化
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.pageYOffset > 100) {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.backdropFilter = 'blur(20px)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.9)';
+                nav.style.backdropFilter = 'blur(10px)';
+            }
+        });
+
+        // 加載完成後的初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            // 添加頁面加載動畫
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease-in-out';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+
+            // 顯示第一個動畫元素
+            setTimeout(() => {
+                document.querySelector('.fade-in').classList.add('fade-in');
+            }, 300);
+        });
+    </script>
+
+</body></html>
